@@ -1,5 +1,6 @@
 package com.example.demo.controller;
 
+import ch.qos.logback.core.CoreConstants;
 import com.example.demo.entity.Course;
 import com.example.demo.service.CourseService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,6 +20,7 @@ public class MyController {
     @GetMapping("/home")
     public String home()
     {
+       // System.out.println("abc");
         return "welcome";
     }
 
